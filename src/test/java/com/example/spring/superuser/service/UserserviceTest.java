@@ -146,7 +146,7 @@ class UserserviceTest {
 
         User user = new User();
         user.setEmail("jane.doe@example.org");
-        user.setFirstname("Jane");
+        user.setFirstname("Jane1g");
         user.setId(1L);
         user.setLastname("Doe");
 
