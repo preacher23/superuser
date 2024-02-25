@@ -107,7 +107,7 @@ class UserserviceTest {
         user.setFirstname("Jane");
         user.setId(1L);
         user.setLastname("Doe");
-        Optional<User> ofResult = Optional.of(user);
+        Optional<User> ofResults = Optional.of(user);
         when(userrepository.findById((Long) any())).thenReturn(ofResult);
         assertThrows(Resourcenotfoundexception.class, () -> userservice.getuserbyid(1L));
         verify(modelMapper).map((Object) any(), (Class<Userdto>) any());
